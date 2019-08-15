@@ -2,16 +2,57 @@
 a. Make a website that prompts the user for a string, then alerts them of whether or not the number is even.
 
 b. Instead of showing a popup, make the text appear on the screen.-->
-<!DOCTYPE html>
-<html>
+
+<!--Part A (uses a popup)-->
+
+<!-- <!DOCTYPE html> -->
+<!-- <html>
 <head>
+
+    <title>Question One</title>
+
     <script>
-      
+      let possiblyEven = window.prompt("Enter a number here!");
+        if (isNaN(possiblyEven)) {
+          window.prompt("Please enter a number here.");
+        } else if (possiblyEven % 2 !== 0) {
+          window.alert("This number is odd.");
+        } else if (possiblyEven % 2 === 0) {
+          window.alert("Your number is even!");
+        }
       </script>
   </head>
 
   <body>
 
     </body>
+
+</html> -->
+
+<!--Part B (text on page)-->
+
+<!DOCYTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+  <h1>So is your number even or odd?</h1>
+
+  <script>
+    let possiblyEven = window.prompt("Enter a number here!");
+      if (isNaN(possiblyEven)) {
+        window.prompt("Please enter a number here.");
+      } else if (possiblyEven % 2 !== 0) {
+        let oddOne = document.createElement("p");
+        document.body.appendChild(oddOne);
+        oddOne.innerText = "Your number is odd.";
+      } else if (possiblyEven % 2 === 0) {
+        let evenOne = document.createElement("p");
+        evenOne.innerText = "Your number is even!";
+        document.body.appendChild(evenOne);
+      }
+    </script>
+  </body>
 
 </html>
