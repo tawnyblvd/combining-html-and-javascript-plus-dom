@@ -1,0 +1,56 @@
+<!--# Question One
+
+a. Make a website that prompts the user for a string, then a number. Then show a popup that displays the string that many times
+
+b. Instead of showing a popup, make the text appear on the screen.-->
+
+<!--Part A (w/a popup)-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nonsense Words!</title>
+  </head>
+
+<body>
+
+  <h1>Printing a Little or a Lot</h1>
+
+  <script>
+      let userWord = window.prompt("enter a word here.");
+      if (userWord) {
+        let userNumber = window.prompt("enter a number");
+        for (let i = 0; i < userNumber; i ++) {
+          window.alert(userWord);
+        }
+      }
+    </script>
+
+  </body>
+</html>
+
+
+<!--Part B (text on screen)-->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nonsense Words!</title>
+  </head>
+
+<body>
+
+  <h1>Printing a Little or a Lot</h1>
+
+  <script>
+      let userWord = window.prompt("enter a word here.");
+      if (userWord) {
+        let userNumber = window.prompt("enter a number");
+        for (let i = 0; i < userNumber; i ++) {
+           //this prints the word once, but in x# of alert times. that is probably wrong
+        }
+      }
+    </script>
+
+  </body>
+</html> -->
