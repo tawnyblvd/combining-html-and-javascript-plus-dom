@@ -1,12 +1,12 @@
 # Combining HTML and JavaScript + DOM Lab
 
-# Question One
+# Question One-Done
 
 a. Make a website that prompts the user for a string, then a number. Then show a popup that displays the string that many times
 
 b. Instead of showing a popup, make the text appear on the screen.
 
-# Question Two
+# Question Two - Done
 
 a. Make a website that prompts the user for a string, then alerts them of whether or not the number is even.
 
