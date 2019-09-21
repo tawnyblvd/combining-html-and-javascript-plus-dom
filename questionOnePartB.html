@@ -5,7 +5,6 @@ a. Make a website that prompts the user for a string, then a number. Then show a
 b. Instead of showing a popup, make the text appear on the screen.-->
 
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,12 +15,15 @@ b. Instead of showing a popup, make the text appear on the screen.-->
 
   <h1>Printing a Little or a Lot</h1>
 
+
   <script>
       let userWord = window.prompt("enter a word here.");
       if (userWord) {
         let userNumber = window.prompt("enter a number");
         for (let i = 0; i < userNumber; i ++) {
-          window.alert(userWord); //this prints the word once, but in x# of alert times. that is probably wrong
+          let newPara = document.createElement("p");
+          newPara.innerText = userWord;
+          document.body.appendChild(newPara); //this prints the word once, but in x# of alert times. that is probably wrong
         }
       }
     </script>
